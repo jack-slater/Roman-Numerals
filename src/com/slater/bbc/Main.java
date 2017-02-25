@@ -9,7 +9,6 @@ public class Main {
         Integer userInput = userInput();
         RomanNumeral romanNumeral = new RomanNumeral();
 	    while (userInput != -1) {
-            if (userInput == -2) userInput = userInput();
 	        String newRomanNumeral = romanNumeral.generate(userInput);
 	        System.out.println(newRomanNumeral);
             userInput = userInput();
