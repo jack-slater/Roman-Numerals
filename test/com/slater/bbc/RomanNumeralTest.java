@@ -29,4 +29,13 @@ public class RomanNumeralTest {
         assertEquals(test.generate(100), "C");
     }
 
+    /* test of numbers up to 1000 */
+    @Test
+    public void romanNumeralGeneratorTest_numbersUpTo1000 () {
+        assertEquals(test.generate(400), "CD");
+        assertEquals(test.generate(500), "D");
+        assertEquals(test.generate(900), "CM");
+        assertEquals(test.generate(1000), "M");
+    }
+
 }
