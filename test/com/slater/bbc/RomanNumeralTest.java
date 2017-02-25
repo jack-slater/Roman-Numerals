@@ -8,6 +8,6 @@ public class RomanNumeralTest {
     RomanNumeral test = new RomanNumeral();
     @Test
     public void romanNumeralGeneratorTest () {
-
+        assertEquals(test.generate(1), "I");
     }
 }
