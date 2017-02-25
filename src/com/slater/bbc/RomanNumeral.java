@@ -10,7 +10,9 @@ public class RomanNumeral implements RomanNumeralGenerator {
     public RomanNumeral () {
         numerals.put(1, "I");
         numerals.put(4, "IV");
-
+        numerals.put(5, "V");
+        numerals.put(9, "IX");
+        numerals.put(10, "X");
     }
 
     public String generate (int num) {
