@@ -13,6 +13,10 @@ public class RomanNumeral implements RomanNumeralGenerator {
         numerals.put(5, "V");
         numerals.put(9, "IX");
         numerals.put(10, "X");
+        numerals.put(40, "XL");
+        numerals.put(50, "L");
+        numerals.put(90, "XC");
+        numerals.put(100, "C");
     }
 
     public String generate (int num) {
