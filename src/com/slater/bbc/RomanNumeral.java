@@ -24,15 +24,15 @@ public class RomanNumeral implements RomanNumeralGenerator {
     }
 
     public String generate (int num) {
-        String newRomanNumberal = "";
+        String newRomanNumeral = "";
         for (Map.Entry<Integer, String> entry: numerals.entrySet()) {
             Integer standard = entry.getKey();
             String roman = entry.getValue();
             while (standard <= num) {
-                newRomanNumberal += roman;
+                newRomanNumeral += roman;
                 num -= standard;
             }
         }
-        return newRomanNumberal;
+        return newRomanNumeral;
     }
 }
