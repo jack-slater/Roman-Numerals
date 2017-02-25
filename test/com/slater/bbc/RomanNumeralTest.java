@@ -47,4 +47,11 @@ public class RomanNumeralTest {
         assertEquals(test.generate(3999), "MMMCMXCIX");
     }
 
+    /* test to handle caveat of only numbers between 1 and 3999 */
+    @Test
+    public void romanNumeralGeneratorTest_caveat () {
+        assertEquals(test.generate(0), "Number must be between 1 and 3999");
+        assertEquals(test.generate(4000), "Number must be between 1 and 3999");
+    }
+
 }

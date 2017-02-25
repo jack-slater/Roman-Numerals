@@ -6,6 +6,7 @@ import java.util.TreeMap;
 
 public class RomanNumeral implements RomanNumeralGenerator {
     private TreeMap<Integer, String> numerals = new TreeMap<Integer, String>(Collections.reverseOrder());
+    private String rangeWarning = "Number must be between 1 and 3999";
 
     public RomanNumeral () {
         numerals.put(1, "I");
@@ -25,6 +26,7 @@ public class RomanNumeral implements RomanNumeralGenerator {
 
     public String generate (int num) {
         String newRomanNumeral = "";
+        if (checkNumberRange(num)) return rangeWarning;
         for (Map.Entry<Integer, String> entry: numerals.entrySet()) {
             Integer standard = entry.getKey();
             String roman = entry.getValue();
@@ -34,5 +36,9 @@ public class RomanNumeral implements RomanNumeralGenerator {
             }
         }
         return newRomanNumeral;
+    }
+
+    private boolean checkNumberRange (int num) {
+        return num < 1 || num > 3999;
     }
 }
