@@ -1,13 +1,15 @@
 package com.slater.bbc;
 
+import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class RomanNumeral implements RomanNumeralGenerator {
-    private TreeMap<Integer, String> numerals = new TreeMap();
+    private TreeMap<Integer, String> numerals = new TreeMap<Integer, String>(Collections.reverseOrder());
 
     public RomanNumeral () {
         numerals.put(1, "I");
+        numerals.put(4, "IV");
 
     }
 

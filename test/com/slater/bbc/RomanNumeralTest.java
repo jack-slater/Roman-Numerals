@@ -10,6 +10,8 @@ public class RomanNumeralTest {
     public void romanNumeralGeneratorTest () {
         assertEquals(test.generate(1), "I");
         assertEquals(test.generate(2), "II");
+        assertEquals(test.generate(4), "IV");
+
 
     }
 }
