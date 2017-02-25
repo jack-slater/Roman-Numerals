@@ -17,7 +17,7 @@ For example, see the following sample inputs and outputs:
 Caveat: Only support numbers between 1 and 3999 
 
 
-# Running Project
+# Running Project in IDE
 
 You will need to have a jdk installed. The project was created using jdk1.8.0_121
 
